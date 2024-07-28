@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  background: transparent;
+}
+body {
+  @apply bg-black text-white;
+}
+.form-border {
+  position: relative;
+  border: 2px solid transparent;
+}
+.form-border::after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(129.59deg, #969696 0%, #343434 98.18%);
+  width: 102%;
+  height: 102%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  z-index: -1;
+}

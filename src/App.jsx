@@ -7,11 +7,36 @@ import { twMerge } from "tailwind-merge";
 function App() {
   return (
     <>
-      <Login />
+      <Signup />
     </>
   );
 }
 
+function Signup() {
+  return (
+    <Card closeIcon={true}>
+      <div>
+        <p className="text-gray-4 font-medium text-sm uppercase">SIGN UP</p>
+        <h3 className="font-semibold text-lg">Create an account to continue</h3>
+      </div>
+      <div className="flex flex-col gap-4 mb-5 mt-11">
+        <Textfield label="Email" placeholder="Enter your email" />
+        <Textfield label="Username" placeholder="Choose a preferred username" />
+        <Textfield
+          label="Password"
+          type="password"
+          placeholder="Choose a strong password"
+          icon={<FiEye className="text-lg" />}
+        />
+      </div>
+      <Button className="w-full">Continue</Button>
+      <p className="text-gray-3 mt-3 text-left">
+        Already have an account?
+        <span className="text-gray-2"> Login →</span>
+      </p>
+    </Card>
+  );
+}
 function Login() {
   return (
     <Card closeIcon={true}>

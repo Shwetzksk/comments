@@ -4,11 +4,10 @@ import Signup from "@/pages/Signup";
 import {
   createBrowserRouter,
   createRoutesFromElements,
-  Navigate,
   Route,
 } from "react-router-dom";
-import * as routes from "./routes";
 import PrivateRouter from "./PrivateRouter";
+import * as routes from "./routes";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

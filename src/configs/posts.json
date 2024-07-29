@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Theresa Webb",
+    "timestamp": "5mins ago",
+    "editted": false,
+    "emoji": "👋",
+    "comments": 24,
+    "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    "img": "/images/theresa.png"
+  },
+  {
+    "name": "Marvin McKinney",
+    "timestamp": "8mins ago",
+    "editted": true,
+    "emoji": "😞",
+    "comments": 20,
+    "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    "img": "/images/marvin.png"
+  }
+]

@@ -1,6 +1,10 @@
 import Button from "@/components/Button";
 
-export default function CreatePost() {
+type ButtonClickEvent = React.MouseEvent<HTMLButtonElement>;
+interface Props {
+  onClick: (e: ButtonClickEvent) => void;
+}
+const CreatePost: React.FC<Props> = ({ onClick }) => {
   return (
     <div className="bg-[#27292D] border-2 border-[#35373B] rounded-lg py-6 px-5  flex flex-col gap-y-4">
       <header>
@@ -19,8 +23,9 @@ export default function CreatePost() {
         />
       </main>
       <footer className="flex justify-end">
-        <Button>Post</Button>
+        <Button onClick={onClick}>Post</Button>
       </footer>
     </div>
   );
-}
+};
+export default CreatePost;

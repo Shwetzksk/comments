@@ -1,5 +1,5 @@
 import logo from "@/assets/logo.svg";
-import Form from "@/features/signup/Form";
+import Form from "@/features/SignupForm";
 
 export default function Signup() {
   return (

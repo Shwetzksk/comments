@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 import * as routes from "@/router/routes";
 import { Link, useLocation } from "react-router-dom";
 
-export default function Form({ isModal }: { isModal: boolean }) {
+export default function LoginForm({ isModal }: { isModal: boolean }) {
   const location = useLocation();
   return (
     <Card closeIcon={isModal}>

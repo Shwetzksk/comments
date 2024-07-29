@@ -1,4 +1,4 @@
-import Form from "@/features/login/Form";
+import Form from "@/features/LoginForm";
 import logo from "@/assets/logo.svg";
 
 export default function Login() {

@@ -5,7 +5,7 @@ import Textfield from "@/components/Textfield";
 import { Link, useLocation } from "react-router-dom";
 import * as routes from "@/router/routes";
 
-export default function SignupCard({ isModal }: { isModal: boolean }) {
+export default function SignupForm({ isModal }: { isModal: boolean }) {
   const location = useLocation();
   return (
     <Card closeIcon={isModal}>
@@ -23,7 +23,9 @@ export default function SignupCard({ isModal }: { isModal: boolean }) {
           icon={<FiEye className="text-lg" />}
         />
       </div>
-      <Button className="w-full">Continue</Button>
+      <Link to={routes.HOME}>
+        <Button className="w-full">Continue</Button>
+      </Link>
       <p className="text-gray-3 mt-3 text-left">
         Already have an account?
         <Link

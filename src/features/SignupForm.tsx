@@ -4,9 +4,11 @@ import Card from "@/components/Card";
 import Textfield from "@/components/Textfield";
 import { Link, useLocation } from "react-router-dom";
 import * as routes from "@/router/routes";
+import useStore from "@/store";
 
 export default function SignupForm({ isModal }: { isModal: boolean }) {
   const location = useLocation();
+  const { onLogin } = useStore();
   return (
     <Card closeIcon={isModal}>
       <div>
@@ -24,7 +26,9 @@ export default function SignupForm({ isModal }: { isModal: boolean }) {
         />
       </div>
       <Link to={routes.HOME}>
-        <Button className="w-full">Continue</Button>
+        <Button className="w-full" onClick={onLogin}>
+          Continue
+        </Button>
       </Link>
       <p className="text-gray-3 mt-3 text-left">
         Already have an account?

@@ -11,7 +11,7 @@ export default function Home() {
   const navigate = useNavigate();
   const location = useLocation();
   const params = new URLSearchParams(location.search).get("modal");
-  console.log(params);
+
   return (
     <section className="w-4/5 mx-auto">
       <div className="flex flex-col gap-3 text-left mb-10">

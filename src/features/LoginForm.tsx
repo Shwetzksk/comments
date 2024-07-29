@@ -4,9 +4,12 @@ import Textfield from "@/components/Textfield";
 import Button from "@/components/Button";
 import * as routes from "@/router/routes";
 import { Link, useLocation } from "react-router-dom";
+import useStore from "@/store";
 
 export default function LoginForm({ isModal }: { isModal: boolean }) {
   const location = useLocation();
+  const { onLogin } = useStore();
+
   return (
     <Card closeIcon={isModal}>
       <div>
@@ -19,6 +22,7 @@ export default function LoginForm({ isModal }: { isModal: boolean }) {
         <Textfield
           label="Email or Username"
           placeholder="Enter your email or username"
+          name="email"
         />
         <Textfield
           label={
@@ -30,10 +34,13 @@ export default function LoginForm({ isModal }: { isModal: boolean }) {
           type="password"
           placeholder="Enter your password"
           icon={<FiEye className="text-lg" />}
+          name="password"
         />
       </div>
       <Link to={routes.HOME}>
-        <Button className="w-full">Login now</Button>
+        <Button className="w-full" onClick={onLogin}>
+          Login now
+        </Button>
       </Link>
       <p className="text-gray-3 mt-3 text-left">
         Not registered yet?{" "}

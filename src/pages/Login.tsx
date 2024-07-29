@@ -1,5 +1,5 @@
 import Form from "@/features/LoginForm";
-import logo from "@/assets/logo.svg";
+import logo from "@/assets/Logo.png";
 
 export default function Login() {
   return (

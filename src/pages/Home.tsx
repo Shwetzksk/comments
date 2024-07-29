@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <section className="w-4/5 mx-auto">
       <div className="flex flex-col gap-3 text-left mb-10">
-        <h2 className="text-[#C5C7CA] font-medium text-2xl">Hello Jane</h2>
-        <p className="text-[#7F8084] font-normal">
+        <h2 className="text-slate-1 font-medium text-2xl">Hello Jane</h2>
+        <p className="text-slate-2 font-normal">
           How are you doing today? Would you like to share something with the
           community 🤗
         </p>

@@ -9,10 +9,10 @@ interface ICardProps {
 const Card: React.FC<ICardProps> = ({ closeIcon, children }) => {
   const location = useLocation();
   return (
-    <div className="min-w-[463px] max-w-md form-border bg-card rounded-lg before:before:bg-gray-300 py-10 px-6">
+    <div className="min-w-[463px] max-w-md form-border bg-card rounded-lg before:before:bg-slate-200 py-10 px-6">
       {closeIcon && (
         <Link to={location.pathname}>
-          <span className="absolute bg-bg-dark rounded-full flex justify-center items-center h-8 w-8 top-7 right-4">
+          <span className="absolute bg-dark rounded-full flex justify-center items-center h-8 w-8 top-7 right-4">
             <IoCloseSharp />
           </span>
         </Link>

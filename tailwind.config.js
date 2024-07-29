@@ -4,11 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        "bg-dark": "#131319",
+        dark: "#131319",
         card: "#27292D",
-        "gray-2": " #C5C7CA",
-        "gray-3": "#7F8084",
-        "gray-4": "#6B6C70",
+        "post-input": "#191920",
+        "slate-1": " #C5C7CA",
+        "slate-2": "#7F8084",
+        "slate-3": "#6B6C70",
+        "slate-4": "#35373B",
         accent: "#4A96FF",
       },
       borderColor: {

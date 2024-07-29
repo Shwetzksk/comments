@@ -13,7 +13,7 @@ export default function LoginForm({ isModal }: { isModal: boolean }) {
   return (
     <Card closeIcon={isModal}>
       <div>
-        <p className="text-gray-4 font-medium text-sm uppercase">
+        <p className="text-slate-3 font-medium text-sm uppercase">
           WELCOME BACK
         </p>
         <h3 className="font-semibold text-lg">Log into your account</h3>
@@ -42,7 +42,7 @@ export default function LoginForm({ isModal }: { isModal: boolean }) {
           Login now
         </Button>
       </Link>
-      <p className="text-gray-3 mt-3 text-left">
+      <p className="text-slate-2 mt-3 text-left">
         Not registered yet?{" "}
         <Link
           to={
@@ -51,7 +51,7 @@ export default function LoginForm({ isModal }: { isModal: boolean }) {
               : `/${routes.SIGNUP}`
           }
         >
-          <span className="text-gray-2">Register →</span>
+          <span className="text-slate-1">Register →</span>
         </Link>
       </p>
     </Card>

@@ -12,7 +12,7 @@ export default function SignupForm({ isModal }: { isModal: boolean }) {
   return (
     <Card closeIcon={isModal}>
       <div>
-        <p className="text-gray-4 font-medium text-sm uppercase">SIGN UP</p>
+        <p className="text-slate-3 font-medium text-sm uppercase">SIGN UP</p>
         <h3 className="font-semibold text-lg">Create an account to continue</h3>
       </div>
       <div className="flex flex-col gap-4 mb-5 mt-11">
@@ -30,7 +30,7 @@ export default function SignupForm({ isModal }: { isModal: boolean }) {
           Continue
         </Button>
       </Link>
-      <p className="text-gray-3 mt-3 text-left">
+      <p className="text-slate-2 mt-3 text-left">
         Already have an account?
         <Link
           to={
@@ -39,7 +39,7 @@ export default function SignupForm({ isModal }: { isModal: boolean }) {
               : `/${routes.LOGIN}`
           }
         >
-          <span className="text-gray-2"> Login →</span>
+          <span className="text-slate-1"> Login →</span>
         </Link>
       </p>
     </Card>
